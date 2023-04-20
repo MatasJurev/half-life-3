@@ -31,7 +31,7 @@ def game():
 def music():
     pygame.mixer.init()
     pygame.mixer.music.load('hl.mp3')  # any mp3 file
-    pygame.mixer.music.play()
+    pygame.mixer.music.play(loops=-1)
     while pygame.mixer.music.get_busy():
         pygame.time.Clock().tick()
 
